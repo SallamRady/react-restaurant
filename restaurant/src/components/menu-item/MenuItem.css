@@ -1,0 +1,24 @@
+.itemCard {
+    width: 15rem;
+    height: 20rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 1px 1px 6px #808080ab;
+}
+
+.itemCard .menuItemImg {
+    width: 100%;
+    height: 10rem;
+}
+
+.itemCard .info .btn{
+    width: 80%;
+    height: 2rem;
+    background-color: #2f4f4f;
+    color: #fff;
+    border: none;
+    font-size: 0.94rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}

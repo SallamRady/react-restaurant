@@ -1,0 +1,62 @@
+.mainNavbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #121619;
+    min-height: 100px;
+    color: #fff;
+}
+
+.mainNavbar .leftSide {
+    width: 50%;
+}
+
+.mainNavbar .leftSide img.logoImg {
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding-left: 3.5rem;
+}
+
+.mainNavbar .rightSide {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mainNavbar .rightSide  a{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.mainNavbar .rightSide  a.active{
+    color: blueviolet;
+    text-shadow: 1px 1px 2px grey;
+}
+
+#taggleIcon{
+    color:#fff;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+.full{
+    width: 100% !important;
+    justify-content: space-evenly;
+}
+
+@media only screen and (min-width:599px) {
+    #taggleIcon{
+        display: none;
+    }
+}
+@media only screen and (min-width:600px) {
+    .mainNavbar .leftSide{
+        display: block;
+    }
+}

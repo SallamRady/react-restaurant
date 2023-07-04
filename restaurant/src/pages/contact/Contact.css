@@ -1,0 +1,78 @@
+.contactContainer {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+.contactContainer .left-side {
+    width: 50%;
+    background-image: url('../../assets/fooda.jpeg');
+    background-position: 100% 100%;
+    background-size: cover;
+}
+
+.contactContainer .right-side {
+    width: 50%;
+    padding-bottom: 1rem;
+}
+
+.contactContainer .right-side h3 {
+    font-size: 2.3rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.contactContainer .right-side form.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: justify;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.contactContainer .right-side form.contactForm>* {
+    margin: 0.3rem 0;
+}
+
+.contactContainer .right-side form.contactForm input,
+.contactContainer .right-side form.contactForm textarea {
+    border-width: 0px 0px 2px 0px;
+    height: 1.6rem;
+    background-color: #1216191f;
+    border-radius: 0.2rem 0.2rem 0 0;
+}
+
+.contactContainer .right-side form.contactForm textarea {
+    height: 6rem;
+}
+
+.contactContainer .right-side form.contactForm input:focus,
+.contactContainer .right-side form.contactForm textarea:focus {
+    border: 0px 0px 2px 0px;
+    outline: none;
+}
+
+.contactContainer .right-side form.contactForm .btn{
+    background-color: #121619;
+    color: #fff;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+@media only screen and (max-width:599px) {
+    .contactContainer .left-side {
+        display: none;
+    }
+    .contactContainer .right-side {
+        width: 100%;
+        margin-bottom: 5rem;
+        display: block;
+        height: 100vh;
+    }
+
+    .contactContainer .right-side h3{
+        margin: 0;
+    }
+}
