@@ -5,7 +5,15 @@ import "./Menu.css";
 
 const Menu = () => {
   const singleMenuItem = MenuList.map((item) => {
-    return <MenuItem image={item.image} name={item.name} price={item.price} />;
+    return (
+      <MenuItem
+        item={item}
+        image={item.image}
+        name={item.name}
+        price={item.price}
+        rate={item.rate}
+      />
+    );
   });
   return (
     <div>

@@ -1,0 +1,54 @@
+.cartList {
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartList  .orderActions {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+}
+
+.cartList  .orderActions .btn{
+    font-size: 1rem;
+    padding: 0.4rem;
+    background-color: #121619;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.cartList  .orderActions .clear{
+    background-color: #ff0044;
+}
+.cartList table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+.cartList table th,
+.cartList table td {
+    text-align: left;
+    padding: 8px;
+}
+
+.cartList table tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.cartList table th {
+    background-color: #121619;
+    color: white;
+}
+
+p.alertMsg {
+    color: #ff0044;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-shadow: 0.5px 0.5px 0.5px;
+}
