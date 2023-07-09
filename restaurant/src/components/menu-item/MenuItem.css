@@ -1,11 +1,12 @@
 .itemCard {
     width: 15rem;
-    height: 20rem;
     margin: 1rem;
     padding: 0.5rem;
     border-radius: 0.4rem;
     box-shadow: 1px 1px 6px #808080ab;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .itemCard .menuItemImg {
@@ -13,18 +14,29 @@
     height: 10rem;
 }
 
-.itemCard .info{
+.itemCard p.description {
+    text-align: left;
+}
+
+.itemCard .info {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+.itemCard .info > *{
+    margin: 0.3rem;
 }
 
-.itemCard .info .actions{
+.itemCard .info .actions {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-.itemCard .info .btn{
+
+.itemCard .info .btn {
     height: 2rem;
     background-color: #2f4f4f;
     color: #fff;

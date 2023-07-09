@@ -1,0 +1,9 @@
+.searchResultContainer{
+    margin-bottom: 2rem;
+}
+.searchItemsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

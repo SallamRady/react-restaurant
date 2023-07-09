@@ -6,22 +6,23 @@ import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
 import { cartContext } from "../../context/cart.context";
 
-const MenuItem = ({ item, image, name, price, rate }) => {
-  const [value, setValue] = useState(rate);
+const MenuItem = ({ item }) => {
+  const [value, setValue] = useState(item.rate);
   let { addCartitem } = useContext(cartContext);
 
   const handleAddCartItem = () => {
     let newItem = { ...item, amount: item.price, quantity: 1 };
-    console.log('item :', newItem)
+    console.log("item :", newItem);
     addCartitem(newItem);
   };
 
   return (
     <div className="itemCard">
-      <img src={image} className="menuItemImg" alt="menu item image" />
+      <img src={item.image} className="menuItemImg" alt="menu item image" />
       <div className="info">
-        <h3>{name}</h3>
-        <h5>{price} $</h5>
+        <h3>{item.name}</h3>
+        <h5>{item.price} $</h5>
+        <p className="description">{item.desc}</p>
         <div className="actions">
           {/* rating... */}
           <Box

@@ -1,4 +1,13 @@
 .cardsContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.categories button {
+    color: #121619;
+    font-weight: 600;
+}
+.categories button.active{
+    color: blueviolet;
 }
