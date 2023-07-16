@@ -26,6 +26,10 @@
     flex-grow: 1;
     justify-content: space-around;
 }
+.itemCard .info h3 a{
+    color:black;
+    text-decoration: none;
+}
 .itemCard .info > *{
     margin: 0.3rem;
 }

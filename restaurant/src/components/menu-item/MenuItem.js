@@ -3,7 +3,7 @@ import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutl
 import "./MenuItem.css";
 import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
-import Typography from "@mui/material/Typography";
+import { NavLink } from "react-router-dom";
 import { cartContext } from "../../context/cart.context";
 
 const MenuItem = ({ item }) => {
@@ -20,7 +20,9 @@ const MenuItem = ({ item }) => {
     <div className="itemCard">
       <img src={item.image} className="menuItemImg" alt="menu item image" />
       <div className="info">
-        <h3>{item.name}</h3>
+        <h3>
+          <NavLink to={"/product/" + item.id}>{item.name}</NavLink>
+        </h3>
         <h5>{item.price} $</h5>
         <p className="description">{item.desc}</p>
         <div className="actions">

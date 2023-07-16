@@ -1,0 +1,41 @@
+.productDetailsContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.productDetailsContainer>div {
+    width: 48%;
+}
+
+.productDetailsContainer .left img {
+    width: 70%;
+    height: 22rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    box-shadow: 1.5px 2px 3px 3px lightgray;
+    transition: all 1s;
+}
+
+.productDetailsContainer .left img:hover {
+    border-radius: 0;
+    transform: scale(1.03);
+}
+
+.productDetailsContainer .right {
+    text-align: left;
+}
+
+.productDetailsContainer .right p.label {
+    color: gray;
+}
+
+.reviewsContainer {
+    margin: auto 7rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}

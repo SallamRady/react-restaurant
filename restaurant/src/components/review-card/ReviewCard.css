@@ -1,0 +1,30 @@
+.reviewCard {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #121619;
+    height: auto;
+    border-left: 6px solid;
+    padding-bottom: 0.3rem;
+    background-color: aliceblue;
+}
+
+.reviewCard .top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 8rem;
+}
+
+.reviewCard .top .personInfo {
+    margin-left: 1rem;
+    text-align: left;
+}
+
+.reviewCard .top img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.reviewCard .body{
+    text-align: left;
+}
